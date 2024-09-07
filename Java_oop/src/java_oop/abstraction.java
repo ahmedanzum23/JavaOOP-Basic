@@ -5,11 +5,13 @@ package java_oop;
  abstract class animal{
 	
 	abstract void walk() ;
-		
+		public void eat() {
+			System.out.println("animal can eat");
+		}
 	}
 	
 	
-	public class horse extends animal{
+ class horse extends animal{
 		
 		public void walk() {
 			System.out.println("hourse can walk with 4 legs");
@@ -19,7 +21,7 @@ package java_oop;
 	
 	
 	
-public class chicken extends animal{
+ class chicken extends animal{
 		
 		public void walk() {
 			System.out.println("hourse can walk with 2 legs");
@@ -27,7 +29,7 @@ public class chicken extends animal{
 		}
 	
 	
-}
+
 
 
 
@@ -40,10 +42,10 @@ public class abstraction {
     	
     	horse h1 = new  horse();
     	h1.walk();
+    	h1.eat();
     	
-    	
-    	animal a1= new animal();  //compile time error
-    	a1.walk();
+    	//animal a1= new animal();  //compile time error
+    	//a1.walk();
     	
     	
     	
